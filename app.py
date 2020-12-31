@@ -8,9 +8,6 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/result')
-def res():
-    return render_template("result.html")
 
 @app.route('/city',methods=['POST','GET'])
 def search_city():
