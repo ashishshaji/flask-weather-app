@@ -1,0 +1,19 @@
+body
+{
+font-family: sans-serif;
+}
+.form{
+  margin: 0 auto;
+     padding: 10px 0;
+
+    width: 250px;
+
+}
+.text-card {
+  margin: auto;
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+
+}

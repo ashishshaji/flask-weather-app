@@ -1,9 +1,25 @@
 <!-- Image and text -->
 {% extends 'base.html' %}
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% endblock %}
 {% block body %}
+<div class="header">
+        <h1 style="text-align: center">weather app</h1>
+    </div>
+
+<div class="text-card">
+  <div class="heading">
+      <h1>{{weather['city_name']}}</h1>
+      <h3>{{weather['temp_cel']}}&#8451;</h3>
+      <a href="/">back</a>
+
+  </div>
 
 
-<h1>{{weather['city_name']}}</h1>
-<h1>{{weather['temp_cel']}}</h1>
-<a href="/">back</a>
+
+
 {% endblock %}
