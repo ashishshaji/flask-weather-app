@@ -13,8 +13,10 @@
 
 <div class="text-card">
   <div class="heading">
+       <div class="d-flex justify-content-center "> <img  src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image">
       <h1>{{weather['city_name']}}</h1>
       <h3>{{weather['temp_cel']}}&#8451;</h3>
+      <h4>{{weather['description']}}</h4>
       <a href="/">back</a>
 
   </div>
