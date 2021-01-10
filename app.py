@@ -14,7 +14,8 @@ def index():
 def search_city():
     if request.method == 'POST':
         city_name = request.form.get('city')
-        url = f'http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid=b20079dcfeb1f6d220aa1d3733d8692c'
+        api_key='your api key'
+        url = f'http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}'
         response = requests.get(url).json()
         current_temperature = response.get('main', {}).get('temp')
         description = response['weather'][0]['description']
